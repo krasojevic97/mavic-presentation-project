@@ -1,0 +1,19 @@
+{
+  "name": "mavipack",
+  "version": "1.0.0",
+  "description": "This is my first portfolio project, to present what I know and what I can do, and I update it with things that I learn, and refactor code as I learn better practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingRichard2/mavicProj.git"
+  },
+  "author": "Andrija Krasojevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingRichard2/mavicProj/issues"
+  },
+  "homepage": "https://github.com/KingRichard2/mavicProj#readme"
+}

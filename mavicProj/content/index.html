@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angMod">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="../lib/angular.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body ng-controller="angCon" id="bodyId">
+     <header class="inner">
+            <!-- Navigation menu-->  
+            <section class="mobileDis">
+                <div class="logo">
+                    <p class ="blueThin first"><strong>King's</strong> Hobby</p>
+                </div>
+                <section class="upper">
+                <div class="menu disNone" id="navMenu">
+                    <nav class="navigation disNone" id="navigationTab">
+                        <ul id="list" class="navList">
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            
+                        </ul>
+                        <div class="user">
+                            <span class="search">
+                                <input type="text" id="searchTextBox" placeholder="" class="hidden">
+                                <img src="images/SVG/User/SVG/Asset 2.svg" alt="xd" id="searchBtn" ng-click="toggleFun()">
+                            </span>
+                            <img src="images/SVG/shopping-cart-svgrepo-com.svg" alt="xd" id="storeBtn">
+                            <img src="images/SVG/User/SVG/Asset 3.svg" alt="xd" id ="userBtn">
+                        </div>
+                    </nav>
+                </div>
+                <div class="burger" id="burgerMenu"  ng-click="toggleMenu()">
+                    <div class="burgerInner"></div>
+                </div>
+            </section>
+            
+        </section>
+        <!-- Navigation menu end-->
+        <section class="main">
+            <div class="farLeft bottom">
+                <a href="#"><img src="images/vertical text/g+.svg" alt="img1"></a>
+                <a href="#"><img src="images/vertical text/tw.svg" alt="img2"></a>
+                <a href="#"><img src="images/vertical text/f.svg" alt="img3"></a>
+                <a href="#"><span>FOLLOW US</span></a>
+            </div>
+            <div class="mainRightDis">
+                <div class="left">
+                    <h1 class="blueThin"><strong>Mavic 2</strong> Pro</h1>
+                    <p>The Mavic 2 offers iconic Hasselblad image quality in the Pro and high-performance zoom lens on the Zoom.</p>
+                    <div class="presenting">
+                        <div class="pres">
+                            <img src="images/SVG/Presentation/Asset 1.svg" alt="">
+                            <div class="presText"><h5>Camera</h5><h4>20 MP 1" CMOS Sensor</h4></div>      
+                        </div>
+                        <div class="pres">
+                            <img src="images/SVG/Presentation/Asset 2.svg" alt="">
+                            <div class="presText"><h5>Gimbal</h5><h4>3-Axis</h4></div>
+                        </div>
+                        <div class="pres">
+                            <img src="images/SVG/Presentation/Asset 3.svg" alt="">
+                            <div class="presText"><h5>Flight time</h5><h4>31 minutes (72 kph)</h4></div>
+                        </div>
+                        <div class="pres">
+                            <img src="images/SVG/Presentation/Asset 4.svg" alt="">
+                            <div class="presText"><h5>Video</h5><h4>4K: 3840x2160/30p</h4></div>
+                        </div> 
+                    </div>
+                    <div class="price">
+                        <div class="priceCl">
+                            <h2>Price</h2>
+                            <h1>${{totalPrice()}}</h1>
+                        </div>
+                        <div class="buttons">
+                            <button class="shop" id="shopNow">SHOP NOW</button>
+                            <div class="plusMinus">
+                                <button class="plusBtn" id="minus1" ng-click="decreaseQuantity()">-</button>
+                                <div id="quantity">{{quantity}}</div>
+                                <button class="plusBtn" id="plus1" ng-click="increaseQuantity()">+</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="mainDisplayCl">
+                        <img ng-src="images\drone\{{imgLink}}" alt="bigDead" id="mainDisplay">
+                    </div>
+                    <div id="images" class="disImages">   
+                        <div class="disImage" ng-click="setImage(1)"><img src="images\drone\5b37fe6f2751046a99744b90.png" alt="dead"></div>
+                        <div class="disImage" ng-click="setImage(2)"><img src="images\drone\61d2fbd592b57c0004c6474e.png" alt="dead" ></div>
+                        <div class="disImage" ng-click="setImage(3)"><img src="images\drone\pngfind.com-dji-png-4835958.png" alt="dead"></div>
+                        <div class="disImage" ng-click="setImage(4)"><img src="images\drone\pngfind.com-mavic-pro-png-6105122.png" alt="dead"></div>
+                        <div class="disImage" ng-click="setImage(5)"><img src="images\drone\pngfind.com-portal-gun-png-2680904.png" alt="dead"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="desTabs">
+        <div class="part"><img src="images/SVG/Lower/Asset 5.svg" alt="dead"><p>Up to 8 km 1080p Video Transmission</p></div>
+        <div class="part"><img src="images/SVG/Lower/Asset 6.svg" alt="dead"><p>Up to 31-min Flight Time</p></div>
+        <div class="part"><img src="images/SVG/Lower/Asset 7.svg" alt="dead"><p>Omnidirectional Obstacle Sensing</p></div>
+        <div class="part"><img src="images/SVG/Lower/Asset 8.svg" alt="dead"><p>Hyperlapse</p></div>
+        <div class="part"><img src="images/SVG/Lower/Asset 9.svg" alt="dead"><p>Active Track 2.0</p></div>
+        <div class="part"><img src="images/SVG/Lower/Asset 10.svg" alt="dead"><p>Hight Compatibility</p></div>
+    </section>
+    <section class="info1">
+        <div class="camera" ng-repeat="prop in drones" ng-class="prop.side == 1 ? 'reverse':''">
+            <div class="camera__Left" >
+                <div class="camera__line">
+                    <h1 class="blueThin"><strong>{{prop.droneName}}</strong></h1>
+                    <h2 class="whiteThin">{{prop.subTitle}}</h2>
+                </div>
+                <div class="specs">
+                    <ul class="ulSpecs">
+                        <li>{{prop.features[0]}}</li>
+                        <li>{{prop.features[1]}}</li>
+                        <li>{{prop.features[2]}}</li>
+                        <li>{{prop.features[3]}}</li>
+                    </ul>
+                    <ul class="ulSpecs">
+                        <li>{{prop.features[4]}}</li>
+                        <li>{{prop.features[5]}}</li>
+                        <li>{{prop.features[6]}}</li>
+                        <li>{{prop.features[7]}}</li>
+                    </ul>
+                </div>
+            </div>
+            <img ng-src="images/drone/{{prop.image}}" alt="bigImage" class="displayImg">
+        </div>
+        <div ng-include="'/mavicProj/content/view/social.html'" class="farLeft toBottomRev"></div>
+    </section>
+    <section class="foldAndPort">
+        <h1 class="foldAndPort__foldH1">
+            Foldable and Portable
+        </h1>
+        <h2 class="foldAndPort__create">
+            Create where you go
+        </h2>
+    </section>
+    <section class="transmis">
+        <div class="farLeft absolutePos">
+            <a href="#"><img src="images/vertical text/g+.svg" alt="img1"></a>
+                <a href="#"><img src="images/vertical text/tw.svg" alt="img2"></a>
+                <a href="#"><img src="images/vertical text/f.svg" alt="img3"></a>
+                <a href="#">FOLLOW US</a>
+        </div>
+        <div> 
+            <h1 class="transmis__sys">
+                OcuSync 2.0 Digital Transmission System
+            </h1>
+            <h2 class="transmis__explore">
+                Explore more of the world smoothly and safely.
+            </h2>
+            <img class="transmis__droneDis"src="images/drone/pngfind.com-dji-png-4835958.png" alt="drone" class="transmis__img">
+            <p class="transmis__droneTxt">8km 1080p live video<br>2.4/5.8GHz real-time auto-switching<br>40Mbs download speed<br>120 ms low latency</p>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features__inner">
+            <div class="wrapRow" ng-repeat="spec in droneSpecs" ng-class="spec.side == 1 ? 'reverse':''">
+                <img ng-src="/mavicProj/content/images/drone/{{spec.image}}" alt="bigDead" class="flightImg">
+                <div class="features__megapix">
+                    <h2 class="blue">{{spec.camSpec}}</h2>
+                    <h2 class="blue2">{{spec.camRes}}</h2>
+                    <p ng-class="spec.side == 0 ? 'camDescription':'camDescription camDescription2'">{{spec.camDes}}</p>
+                    <div class="features__icons" ng-class="spec.side == 0 ? '':'flEnd'">
+                        <div class="icon" ng-repeat="e in spec.icon" ng-class="spec.side == 0 ? '':' rowRev'">
+                                <img class="iconImg" ng-src="/mavicProj/content/{{e.path}}" alt="dead">
+                                <span>{{e.text}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>    
+            <div ng-include="'content/view/social.html'" class="farLeft toBottomRev"></div>
+    </section>
+    <section class="footer">
+        <div class="footer__left">
+            <h1 class="blueThin smaller"><strong>King's</strong> Hobby</h1>
+            <div class="farLeft footerFarLeft"><a href="#"><img src="images/vertical text/g+.svg" alt="img1"></a>
+                <a href="#"><img src="images/vertical text/tw.svg" alt="img2"></a>
+                <a href="#"><img src="images/vertical text/f.svg" alt="img3"></a>
+                <a href="#">FOLLOW US</a>
+            </div>
+            <div class="footer__lowerLeft">
+                <p class="footer__questions">Do you have questions about our website,<br> our products or any of our services?</p>
+                <div class="footer__feedback"> 
+                    <a href="#">Send us feedback ></a><br>
+                    <a href="#">Newsletter sign up ></a>
+                </div>  
+            </div>
+        </div>
+        <div class="footer__right">
+            <div class="footer__info">Store</div>
+            <div class="footer__info">Events
+                <ul class="footer__list">
+                    <li><a href="#"> Community Events</a></li>
+                    <li><a href="#"> Events in the Store</a></li>
+                    <li><a href="#"> Events too Cool to Miss</a></li>
+                    <li><a href="#"> Hooby Events</a></li>
+                </ul>
+            </div>
+            <div class="footer__info">Services</div>
+            <div class="footer__info">Resources
+                <ul class="footer__list">
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#"> Video</a></li>
+                    <li><a href="#"> Audio</a></li>
+                    <li><a href="#"> Gallery</a></li>
+                    <li><a href="#"> FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer__info">Blog</div>
+            <div class="footer__info">News</div>
+            <div class="footer__info">About Us</div>
+            <div class="footer__info">Contact Us</div>
+        </div>
+        <p class="footer__questions absolute">Built and operated by kontrola LLC</p>
+    </section>
+</body>
+</html>

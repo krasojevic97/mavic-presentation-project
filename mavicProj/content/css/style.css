@@ -1,0 +1,1194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+* ul {
+  padding: 0;
+}
+
+svg {
+  color: rgb(57, 177, 233);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(31, 28, 28);
+  color: rgb(166, 166, 166);
+  font-family: "Roboto";
+  z-index: -2;
+}
+
+.inner {
+  width: 100%;
+  height: auto;
+}
+.inner .mobileDis {
+  display: flex;
+  padding: 1vw 2vw;
+}
+.inner .mobileDis .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.hiddenFlow {
+  overflow: hidden;
+}
+
+.blueThin {
+  font-size: 2vw;
+  line-height: 5vw;
+  font-weight: 100;
+}
+.blueThin strong {
+  font-weight: 500;
+  color: rgb(141, 219, 255);
+}
+
+.first {
+  z-index: 20;
+}
+
+.upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  padding: 2vw 0 2vw 0;
+}
+.upper .blueThin {
+  font-size: 2vw;
+  text-align: center;
+}
+.upper .menu {
+  width: 100%;
+  display: inherit;
+  align-items: center;
+}
+.upper .navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.upper .navigation #list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  gap: 2vw;
+}
+.upper .navigation li {
+  transition: 0.2s ease;
+  z-index: 1;
+}
+.upper .navigation li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+}
+.upper .navigation li:hover {
+  transform: scale(2);
+  padding: 0 2em;
+  z-index: 0;
+}
+.upper .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5vw;
+}
+.upper .user img {
+  height: 3vw;
+  z-index: 1;
+  transition: 0.2s ease;
+  padding: 0.9vw;
+  border-radius: 1vw;
+}
+.upper .user img:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.upper .user #searchBtn {
+  position: relative;
+  z-index: 5;
+}
+.upper .user #searchTextBox {
+  font-size: 1.75vw;
+  width: 500%;
+  padding: 0 3vw;
+  height: 100%;
+  color: rgb(43, 43, 43);
+  background: rgb(255, 254, 254);
+  border: none;
+  border-radius: 1vw;
+  position: absolute;
+  left: 0;
+  z-index: 4;
+}
+.upper .user .search {
+  display: flex;
+  position: relative;
+}
+.upper .burger {
+  width: 7.5vw;
+  height: 10vw;
+  display: none;
+  z-index: 4;
+}
+
+.farLeft {
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5vw;
+  width: 2em;
+  padding: 2em;
+  padding-top: 10em;
+  white-space: nowrap;
+  color: rgb(94, 203, 254);
+  font-size: 0.9vw;
+}
+.farLeft span {
+  color: rgb(94, 203, 254);
+}
+.farLeft a {
+  transition: 0.2s ease;
+  color: inherit;
+  border-radius: 3vw;
+  padding: 1vw;
+}
+.farLeft a:hover {
+  background-color: rgb(79, 77, 77);
+}
+.farLeft::after {
+  content: "";
+  width: 0.3em;
+  height: 15em;
+  background-color: rgb(94, 203, 254);
+  border-radius: 20px;
+}
+.farLeft img {
+  color: inherit;
+  width: 1.5em;
+}
+
+.bottom {
+  position: relative;
+  bottom: 9.75em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 0 2vw;
+  width: 100%;
+  height: auto;
+  font-size: 0.75vw;
+}
+.main .mainRightDis {
+  display: inherit;
+  justify-content: inherit;
+  height: 100%;
+}
+.main .left {
+  width: 100%;
+  padding: 3vw 1vw;
+}
+.main .left .blueThin {
+  font-size: 3vw;
+}
+.main .left p {
+  font-size: 1vw;
+  width: 90%;
+}
+.main .left .presenting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em 0;
+}
+.main .left .presenting .pres {
+  width: 50%;
+  height: 7em;
+  display: inherit;
+  align-items: center;
+  font-size: 1vw;
+}
+.main .left .presenting img {
+  width: 6vw;
+  padding: 1em;
+}
+.main .left .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh 1vw;
+  font-size: 1vw;
+}
+.main .left .price h1 {
+  font-size: 2vw;
+}
+.main .left .price #priceId {
+  font-size: 2vw;
+  padding: 0;
+}
+.main .left .price .buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.main .left .price .buttons #quantity {
+  font-size: 1.3vw;
+}
+.main .left .price .buttons .plusMinus {
+  display: inherit;
+  align-items: center;
+  gap: 1em;
+}
+.main .left .price .buttons .shop {
+  width: 15vw;
+  height: 4vw;
+  font-size: 1.2vw;
+  color: white;
+  background-color: rgb(94, 203, 254);
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.main .left .price .buttons .shop:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.main .left .price .buttons .plusBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  font-size: 1.5vw;
+  background-color: rgb(26, 23, 23);
+  color: rgb(128, 127, 127);
+  transition: 0.2s ease;
+}
+.main .left .price .buttons .plusBtn:hover {
+  cursor: pointer;
+  background-color: rgb(21, 19, 19);
+  color: white;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+.main .right {
+  width: 120%;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+  position: relative;
+  bottom: 2em;
+}
+.main .right .disImages {
+  background-color: transparent;
+}
+.main .right .disImages .disImage {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 8vw;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.main .right .disImages .disImage:hover {
+  cursor: pointer;
+  border: 3px solid rgb(66, 61, 61);
+  transform: scale(1.1);
+}
+.main .mainDisplayCl {
+  height: clamp(30vh, 35vw, 35vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vw;
+}
+.main .mainDisplayCl img {
+  width: 100%;
+}
+.main .mainDisplayCl #mainDisplay {
+  width: 80%;
+}
+.main #images {
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desTabs {
+  height: clamp(15vh, 20vw, 30vh);
+  background-color: rgb(46, 43, 43);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.desTabs .part {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1vw;
+  color: white;
+}
+.desTabs .part img {
+  width: 10vw;
+  height: 6em;
+}
+.desTabs .part:hover {
+  background-color: rgb(94, 203, 254);
+  cursor: pointer;
+}
+.desTabs .part p {
+  width: 50%;
+  text-align: center;
+}
+
+.info1 {
+  background-color: rgb(31, 28, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 300;
+  height: auto;
+  color: white;
+}
+.info1 .camera {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.info1 .camera .displayImg {
+  width: 30vw;
+  justify-self: center;
+}
+.info1 .camera .whiteThin {
+  font-size: 1.5vw;
+}
+.info1 .camera .specs {
+  display: flex;
+  justify-content: start;
+  font-size: 1vw;
+  gap: 6em;
+}
+.info1 .camera .specs .ulSpecs {
+  list-style-type: none;
+  font-size: 1.2vw;
+  justify-content: start;
+}
+.info1 .camera .specs .ulSpecs li {
+  padding: 0.5vw 0;
+}
+.info1 .camera__Left {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.info1 .camera__line {
+  padding: 1vw 0;
+  display: flex;
+  flex-direction: column;
+}
+.info1 .camera__line::after {
+  content: "";
+  width: 10vw;
+  height: 0.3vw;
+  border-radius: 10px;
+  background-color: rgb(94, 203, 254);
+  margin-top: 2vw;
+}
+.info1 .reverse {
+  flex-direction: row-reverse;
+}
+
+.toBottomRev {
+  writing-mode: horizontal-tb;
+  width: 40vw;
+  left: 0;
+  right: 0;
+  padding-top: 2em;
+  white-space: nowrap;
+  align-self: start;
+  flex-direction: row-reverse;
+  position: relative;
+  left: 5vw;
+}
+.toBottomRev::after {
+  content: "";
+  width: 100%;
+  height: 0.3vw;
+  border-radius: 10px;
+  background-color: linear-gradient(0.5turn, black 50%, rgb(58, 204, 253));
+}
+
+.foldAndPort {
+  color: white;
+  height: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("../images/prince-hassan-VN3xlW3N7yw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  gap: 1.5vw;
+  padding: 10vw;
+}
+.foldAndPort__foldH1 {
+  font-size: 5vw;
+}
+.foldAndPort__create {
+  font-size: 3.5vw;
+  font-weight: 300;
+}
+
+.transmis {
+  text-align: center;
+  background-color: rgb(31, 28, 28);
+  padding: 4vw;
+  line-height: 5vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+}
+.transmis__droneDis {
+  width: 50vw;
+  height: 22vw;
+}
+.transmis__sys {
+  font-size: 4vw;
+  font-weight: 400;
+}
+.transmis__explore {
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+.transmis__droneTxt {
+  line-height: 5vw;
+  font-size: 2vw;
+  font-weight: 300;
+}
+.transmis .absolutePos {
+  position: absolute;
+  left: 5em;
+  bottom: 5vw;
+  line-height: 1em;
+}
+
+.features {
+  height: auto;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+.features .wrapRow {
+  display: flex;
+  align-items: center;
+}
+.features__inner {
+  font-size: 1vw;
+  padding: 4vw;
+}
+.features__megapix {
+  padding: 2vw 4vw;
+  opacity: 1;
+  display: inherit;
+  flex-direction: column;
+  gap: 1vw;
+  width: 50vw;
+}
+.features__megapix .camDescription {
+  width: 40vw;
+}
+.features__megapix .camDescription2 {
+  align-self: end;
+}
+.features .flightImg {
+  width: 20vw;
+  height: 20vw;
+  align-self: center;
+  border-radius: 10vw;
+}
+.features .second {
+  border-radius: 0;
+  width: 20vw;
+  height: 16vw;
+}
+.features .reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.features .reverse .flightImg {
+  width: 20vw;
+  height: 17.5vw;
+  align-self: center;
+  border-radius: 0;
+  border-top-right-radius: 10vw;
+}
+.features__icons {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 0;
+}
+.features__icons .icon {
+  display: inherit;
+  width: 20vw;
+  gap: 1vw;
+  align-items: center;
+}
+.features__icons .icon .iconImg {
+  width: 4vw;
+}
+.features__icons .icon .iconText {
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.features__icons .icon__span {
+  gap: 1vw;
+  display: flex;
+  align-items: center;
+}
+.features__icons .rowRev {
+  flex-direction: row-reverse;
+  align-content: flex-start;
+}
+.features .flEnd {
+  justify-content: flex-end;
+}
+.features::before {
+  content: "";
+  background-image: url("../images/drone/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2vw 2vw 5vw 2vw;
+  display: flex;
+  font-size: 1vw;
+}
+.footer__feedback {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerFarLeft {
+  writing-mode: horizontal-tb;
+  padding: 1vw 0;
+  gap: 0;
+  width: 20vw;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.footer .footerFarLeft::after {
+  display: none;
+}
+.footer .footerFarLeft .footer__questions {
+  font-size: 0.5em;
+}
+.footer .smaller {
+  font-size: 2vw;
+  line-height: 2vw;
+}
+.footer__questions {
+  font-size: 1vw;
+  opacity: 0.5;
+}
+.footer__lowerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.footer__right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 10vw;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.footer__list {
+  list-style-type: none;
+  line-height: 2vw;
+}
+.footer__list a {
+  opacity: 0.5;
+}
+.footer .absolute {
+  position: absolute;
+  width: 95%;
+  text-align: center;
+  bottom: 1vw;
+}
+
+@media (max-width: 960px) {
+  .farLeft {
+    font-size: 1.25vw;
+    position: relative;
+    bottom: 2em;
+  }
+  .farLeft::after {
+    width: 0.35vw;
+    border-radius: 20px;
+    height: 10vh;
+  }
+  .toBottomRev::after {
+    width: 60vh;
+    height: 0.35vw;
+  }
+  .inner .mobileDis .upper .navigation .navList li a {
+    font-size: 1.25vw;
+  }
+  .main .left p {
+    font-size: 1.3vw;
+  }
+  .main .presenting .pres {
+    gap: 1vw;
+  }
+  .main .presenting .presText {
+    font-size: 1.15vw;
+  }
+  .main .presenting .presText h5 {
+    font-weight: 300;
+  }
+  .main .presenting .presText h4 {
+    font-weight: 300;
+  }
+  .main .right {
+    height: 50vw;
+  }
+  .desTabs .part {
+    font-size: 1.25vw;
+  }
+  .info1 .camera .whiteThin {
+    font-size: 1.75vw;
+  }
+  .info1 .camera .ulSpecs li {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .transmis__explore {
+    font-size: 2vw;
+  }
+  .transmis__droneDis {
+    margin: 3vw 4vw 2vw 4vw;
+  }
+  .features__megapix .blue {
+    font-size: 1.5vw;
+  }
+  .features__megapix .blue2 {
+    font-size: 1.25vw;
+  }
+  .features__megapix .camDescription {
+    line-height: 2vw;
+    font-size: 1.25vw;
+  }
+  .features__megapix .icon {
+    font-size: 1.25vw;
+    white-space: nowrap;
+  }
+  .features__megapix .icon .iconImg {
+    width: 5vw;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer__left .blueThin {
+    font-size: 3vw;
+  }
+  .footer__questions {
+    font-size: 1.35vw;
+  }
+  .footer__lowerLeft {
+    gap: 8vw;
+    width: 80%;
+  }
+  .footer__lowerLeft a {
+    font-size: 1.35vw;
+  }
+  .footer__right {
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 3vw;
+    height: 100%;
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+  }
+  .footer__info {
+    font-size: 1.25vw;
+    line-height: 4vw;
+  }
+  .footer__feedback {
+    gap: 1vw;
+  }
+}
+@media (max-width: 480px) {
+  .mobileDis {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  .blueThin {
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+  .upper {
+    position: relative;
+    width: 100%;
+  }
+  .upper .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 10vw;
+    right: 2vw;
+  }
+  .upper .burger:hover {
+    cursor: pointer;
+  }
+  .upper .burger .burgerInner {
+    width: 60%;
+    height: 1px;
+    background-color: white;
+    align-self: flex-end;
+  }
+  .upper .burger::before {
+    content: " ";
+    width: 100%;
+    position: relative;
+    bottom: 1.5vw;
+    background-color: white;
+    height: 1px;
+  }
+  .upper .burger::after {
+    content: " ";
+    width: 30%;
+    align-self: flex-end;
+    height: 1px;
+    position: relative;
+    top: 1.5vw;
+    background-color: white;
+  }
+  .upper .menu {
+    position: fixed;
+    background-color: #1f1c1c;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .upper .menu .navigation {
+    padding: 0 5vw;
+    flex-direction: column;
+    position: relative;
+    top: 10vw;
+    width: 100%;
+    height: 93%;
+  }
+  .upper .menu .navigation .user {
+    height: 20vw;
+    padding: 3vw 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .upper .menu .navigation .user img {
+    width: 10vw;
+    height: 10vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .upper .menu .navigation .user #storeBtn {
+    width: 9.5vw;
+    height: 9.5vw;
+  }
+  .upper .menu .navigation .user #searchBtn {
+    position: relative;
+    z-index: 5;
+  }
+  .upper .menu .navigation .user #searchTextBox {
+    font-size: 5vw;
+    width: 900%;
+    height: 150%;
+    position: absolute;
+    padding: 0 10vw;
+    right: 0;
+    color: rgb(43, 43, 43);
+    background: rgb(255, 254, 254);
+    border: none;
+    border-radius: 1vw;
+    align-self: center;
+    z-index: 4;
+  }
+  .upper .menu .navigation .user :focus-within {
+    border: solid lightblue;
+  }
+  .upper .menu .navigation #list {
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 0;
+    min-width: 100%;
+  }
+  .upper .menu .navigation #list li {
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .upper .menu .navigation #list li a {
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-left: 2vw;
+  }
+  .upper .menu .navigation #list li:hover {
+    transform: scale(1);
+    padding: 0;
+    background-color: #2b2b2b;
+  }
+  .upper .menu .navigation #list ::after {
+    content: " ";
+    position: relative;
+    height: 1px;
+    background-color: rgb(69, 67, 67);
+  }
+  .upper .menu .navigation .navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .inner {
+    overflow: hidden;
+  }
+  .inner .mobileDis {
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(31, 28, 28);
+    padding: 0 0 0 2vw;
+  }
+  .inner .mobileDis .upper {
+    justify-content: flex-end;
+  }
+  .inner .mobileDis .logo {
+    width: 30vw;
+  }
+  .main {
+    padding: 20vw 3vw 3vw 3vw;
+    height: auto;
+  }
+  .main .farLeft {
+    display: none;
+  }
+  .main .mainRightDis {
+    flex-direction: column;
+  }
+  .main .mainRightDis .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+  }
+  .main .mainRightDis .left p {
+    font-size: 4.5vw;
+  }
+  .main .mainRightDis .left .blueThin {
+    font-size: 10vw;
+    line-height: 20vw;
+  }
+  .main .mainRightDis .left .price {
+    gap: 2vw;
+    padding: 0 3vw 10vw 3vw;
+    width: 100%;
+  }
+  .main .mainRightDis .left .price .priceCl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+  }
+  .main .mainRightDis .left .price .priceCl h2 {
+    display: none;
+  }
+  .main .mainRightDis .left .price h2 {
+    font-size: 10vw;
+  }
+  .main .mainRightDis .left .price h1 {
+    font-size: 8vw;
+  }
+  .main .mainRightDis .left .price .buttons {
+    flex-direction: column-reverse;
+    height: 35vw;
+  }
+  .main .mainRightDis .left .price .buttons .shop {
+    width: 40vw;
+    font-size: 5vw;
+    height: 20vw;
+  }
+  .main .mainRightDis .left .price .buttons .plusMinus {
+    width: 40vw;
+    height: 20vw;
+    justify-content: center;
+    gap: 5vw;
+  }
+  .main .mainRightDis .left .price .buttons .plusMinus #quantity {
+    font-size: 5vw;
+  }
+  .main .mainRightDis .left .price .buttons .plusMinus .plusBtn {
+    font-size: 10vw;
+    height: 15vw;
+    width: 15vw;
+  }
+  .main .mainRightDis .left .presenting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-gap: 2vw;
+  }
+  .main .mainRightDis .left .presenting .pres {
+    height: 20%;
+    background-color: #2b2b2b;
+    width: 100%;
+    display: flex;
+    padding: 2vw;
+    border-radius: 8px;
+    height: 100%;
+  }
+  .main .mainRightDis .left .presenting .pres .presText {
+    font-size: 2.5vw;
+    width: 100%;
+  }
+  .main .mainRightDis .left .presenting .pres img {
+    width: 15vw;
+  }
+  .main .mainRightDis .left .presenting .pres:hover {
+    background-color: rgb(94, 203, 254);
+    cursor: pointer;
+  }
+  .main .mainRightDis .right {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+  .main .mainRightDis .right #images {
+    height: 10vw;
+  }
+  .main .mainRightDis .right .disImages .disImage {
+    width: 14vw;
+  }
+  .main .mainRightDis .right .disImages .disImage img {
+    width: 14vw;
+  }
+  .desTabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  .desTabs .part {
+    width: 100%;
+    height: 30vw;
+  }
+  .desTabs .part img {
+    width: 20vw;
+    height: 10vw;
+  }
+  .info1 .farLeft {
+    font-size: 3vw;
+    width: 90%;
+    padding-top: 0;
+  }
+  .info1 .farLeft a {
+    padding: 2.5vw;
+    border-radius: 10vw;
+  }
+  .info1 .camera {
+    flex-direction: column;
+    gap: 10vw;
+  }
+  .info1 .camera__Left {
+    width: 100%;
+  }
+  .info1 .camera__line .blueThin {
+    font-size: 8vw;
+    line-height: unset;
+  }
+  .info1 .camera__line .whiteThin {
+    font-size: 4.5vw;
+  }
+  .info1 .camera .specs {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .info1 .camera .specs .ulSpecs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vw;
+  }
+  .info1 .camera .specs .ulSpecs li {
+    font-size: 2.5vw;
+  }
+  .info1 .camera .displayImg {
+    width: 80vw;
+  }
+  .transmis__explore {
+    font-size: 3vw;
+    font-weight: 400;
+  }
+  .transmis__droneDis {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 4vw;
+    padding-top: 8vw;
+  }
+  .transmis .farLeft {
+    display: none;
+  }
+  .transmis__droneTxt {
+    font-size: 3vw;
+    line-height: 10vw;
+    font-weight: 400;
+  }
+  .features .farLeft {
+    display: none;
+  }
+  .features__inner .wrapRow {
+    flex-direction: column;
+  }
+  .features__inner .flightImg {
+    display: none;
+  }
+  .features__megapix {
+    width: 100%;
+    gap: 4vw;
+    padding-top: 5vw;
+  }
+  .features__megapix .blue {
+    font-size: 8vw;
+  }
+  .features__megapix .blue2 {
+    font-size: 5vw;
+  }
+  .features__megapix .camDescription {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 7vw;
+    text-align: justify;
+  }
+  .features__icons {
+    width: 100%;
+    gap: 5vw;
+  }
+  .features__icons .icon {
+    width: 100%;
+    justify-content: flex-start;
+    height: 100%;
+    font-size: 4vw;
+  }
+  .features__icons .icon .iconImg {
+    width: 20vw;
+  }
+  .footer__left {
+    width: 50%;
+    height: 100%;
+    gap: 4vw;
+    padding: 4vw;
+  }
+  .footer__left .blueThin {
+    font-size: 5vw;
+    line-height: unset;
+  }
+  .footer__left .farLeft {
+    width: 100%;
+    font-size: 2.25vw;
+  }
+  .footer__left .farLeft a {
+    padding: 2vw;
+    border-radius: 4vw;
+  }
+  .footer__questions {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+  .footer__feedback a {
+    font-size: 3vw;
+  }
+  .footer__right {
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__info {
+    font-size: 3vw;
+    line-height: 10vw;
+  }
+  .footer__list {
+    line-height: 7vw;
+  }
+  .disNone {
+    display: none !important;
+  }
+  .posLeft {
+    position: relative;
+    left: 2vw;
+  }
+  .widen {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    opacity: 0.8;
+    border-radius: 10vw;
+  }
+}/*# sourceMappingURL=style.css.map */
